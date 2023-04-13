@@ -8,12 +8,7 @@ const useLogin = () => {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm({
-        defaultValues: {
-            email: "andreax@hotmail.com",
-            password: "",
-        },
-    });
+    } = useForm();
 
     const dispatch = useDispatch();
         

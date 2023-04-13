@@ -9,13 +9,7 @@ const RegisterForm = () => {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm({
-        defaultValues: {
-            nombre: "Andrea",
-            email: "andreax@hotmail.com",
-            password: "",
-        }
-    });
+    } = useForm();
     const navigate = useNavigate();
     const [formData, setFormData] = useState({});
 
